@@ -1,8 +1,10 @@
 package entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Students {
+
+public class Students implements Serializable{
 	private String sid;
 	private String sname;
 	private String gender;
@@ -29,8 +31,8 @@ public class Students {
 	public Date getBirthday() {
 		return birthday;
 	}
-	public void setBirthday(Date birthday) {
-		this.birthday = birthday;
+	public void setBirthday(Date date) {
+		this.birthday = date;
 	}
 	public String getAddress() {
 		return address;

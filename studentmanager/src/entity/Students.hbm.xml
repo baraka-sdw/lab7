@@ -10,7 +10,7 @@
         </id>
         <property name="sname" type="string"/>
         <property name="gender" type="string"/>
-        <property name="birthday" type="date"/>
+        <property name="birthday" type="timestamp"/>
         <property name="address" type="string"/>
    </class>
 </hibernate-mapping>

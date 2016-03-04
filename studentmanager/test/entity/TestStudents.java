@@ -17,19 +17,19 @@ import org.junit.Test;
 
 public class TestStudents {
 //	   @Test
-//       public void testShchemaExport(){
-//        	//创建服务注册对象
-//        	ServiceRegistry sr=new StandardServiceRegistryBuilder().configure().build();
-//        	//创建sessionFactory
-//        	MetadataImplementor mi=(MetadataImplementor) new MetadataSources(sr).buildMetadata();
-//        	//创建SchemaReport对象
-//        	SchemaExport se=new SchemaExport(mi);
-//        	se.create(true, true);
-//        }
-//        public static void main(String[] args) {
-//			TestStudents ts=new TestStudents();
-//			ts.testShchemaExport();
-//		}
+       public void testShchemaExport(){
+        	//创建服务注册对象
+        	ServiceRegistry sr=new StandardServiceRegistryBuilder().configure().build();
+        	//创建sessionFactory
+        	MetadataImplementor mi=(MetadataImplementor) new MetadataSources(sr).buildMetadata();
+        	//创建SchemaReport对象
+        	SchemaExport se=new SchemaExport(mi);
+        	se.create(true, true);
+        }
+        public static void main(String[] args) {
+			TestStudents ts=new TestStudents();
+			ts.testShchemaExport();
+		}
 	   @Test
         public void testSaveStudents(){
         	//创建服务注册对象
